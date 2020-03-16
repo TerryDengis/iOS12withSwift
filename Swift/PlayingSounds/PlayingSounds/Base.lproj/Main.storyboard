@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PlayingSounds" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oM-lD-3JE">
+                                <rect key="frame" x="16" y="35" width="343" height="30"/>
+                                <state key="normal" title="Play Sound"/>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OxW-aZ-1RM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dn-uU-bK8">
+                                <rect key="frame" x="16" y="81" width="343" height="30"/>
+                                <state key="normal" title="Play Music"/>
+                                <connections>
+                                    <action selector="playMusic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tr6-5i-IiH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mlz-KF-d3g">
+                                <rect key="frame" x="16" y="127" width="343" height="30"/>
+                                <state key="normal" title="Pause Music"/>
+                                <connections>
+                                    <action selector="pauseMusic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SJP-Gx-2nv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkS-bx-saU">
+                                <rect key="frame" x="16" y="173" width="343" height="30"/>
+                                <state key="normal" title="Restart Music"/>
+                                <connections>
+                                    <action selector="restartMusic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Vl-EE-zIe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duH-8a-4f3">
+                                <rect key="frame" x="16" y="219" width="343" height="30"/>
+                                <state key="normal" title="Stop Music"/>
+                                <connections>
+                                    <action selector="stopMusic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C7U-1K-6gc"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qcZ-JL-vVl">
+                                <rect key="frame" x="14" y="265" width="347" height="31"/>
+                                <connections>
+                                    <action selector="volume:" destination="BYZ-38-t0r" eventType="valueChanged" id="dck-VU-RZy"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="duH-8a-4f3" firstAttribute="top" secondItem="nkS-bx-saU" secondAttribute="bottom" constant="16" id="09g-Rq-Gis"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qcZ-JL-vVl" secondAttribute="trailing" constant="16" id="0sg-sb-kRs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mlz-KF-d3g" secondAttribute="trailing" constant="16" id="3f2-rp-9kb"/>
+                            <constraint firstItem="duH-8a-4f3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="6tL-E9-tXZ"/>
+                            <constraint firstItem="8oM-lD-3JE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="E1u-SY-VEa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8oM-lD-3JE" secondAttribute="trailing" constant="16" id="R3k-nM-bAe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nkS-bx-saU" secondAttribute="trailing" constant="16" id="S9R-33-vuM"/>
+                            <constraint firstItem="qcZ-JL-vVl" firstAttribute="top" secondItem="duH-8a-4f3" secondAttribute="bottom" constant="16" id="Ule-iU-hgo"/>
+                            <constraint firstItem="9dn-uU-bK8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YHg-dy-gZJ"/>
+                            <constraint firstItem="Mlz-KF-d3g" firstAttribute="top" secondItem="9dn-uU-bK8" secondAttribute="bottom" constant="16" id="Z3d-Fw-WtA"/>
+                            <constraint firstItem="8oM-lD-3JE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ZmI-hS-pdd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="duH-8a-4f3" secondAttribute="trailing" constant="16" id="ZtE-vx-e50"/>
+                            <constraint firstItem="qcZ-JL-vVl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hRi-5N-RP8"/>
+                            <constraint firstItem="9dn-uU-bK8" firstAttribute="top" secondItem="8oM-lD-3JE" secondAttribute="bottom" constant="16" id="izJ-0x-dpd"/>
+                            <constraint firstItem="Mlz-KF-d3g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mRj-Z4-09c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9dn-uU-bK8" secondAttribute="trailing" constant="16" id="oV5-wM-pE0"/>
+                            <constraint firstItem="nkS-bx-saU" firstAttribute="top" secondItem="Mlz-KF-d3g" secondAttribute="bottom" constant="16" id="qif-tA-grQ"/>
+                            <constraint firstItem="nkS-bx-saU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tic-E5-WqZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="volumeSlider" destination="qcZ-JL-vVl" id="CWm-9n-2Ib"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

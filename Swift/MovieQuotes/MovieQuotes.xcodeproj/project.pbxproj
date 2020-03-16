@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FEEBE9B221FA425D004EA23A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEEBE9B121FA425D004EA23A /* Assets.xcassets */; };
+		FEEBE9B921FA425D004EA23A /* MovieQuotes MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FEEBE9B821FA425D004EA23A /* MovieQuotes MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FEEBE9BE21FA425D004EA23A /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEEBE9BD21FA425D004EA23A /* Messages.framework */; };
+		FEEBE9C121FA425D004EA23A /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEBE9C021FA425D004EA23A /* MessagesViewController.swift */; };
+		FEEBE9C421FA425D004EA23A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEEBE9C221FA425D004EA23A /* MainInterface.storyboard */; };
+		FEEBE9C621FA425D004EA23A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEEBE9C521FA425D004EA23A /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEEBE9BA21FA425D004EA23A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEEBE9A821FA425B004EA23A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEEBE9B721FA425D004EA23A;
+			remoteInfo = "MovieQuotes MessagesExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FEEBE9CD21FA425D004EA23A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FEEBE9B921FA425D004EA23A /* MovieQuotes MessagesExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FEEBE9AE21FA425B004EA23A /* MovieQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEEBE9B121FA425D004EA23A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEEBE9B321FA425D004EA23A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEEBE9B821FA425D004EA23A /* MovieQuotes MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MovieQuotes MessagesExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEEBE9BD21FA425D004EA23A /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		FEEBE9C021FA425D004EA23A /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		FEEBE9C321FA425D004EA23A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		FEEBE9C521FA425D004EA23A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEEBE9C721FA425D004EA23A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEEBE9B521FA425D004EA23A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEEBE9BE21FA425D004EA23A /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FEEBE9A721FA425B004EA23A = {
+			isa = PBXGroup;
+			children = (
+				FEEBE9B021FA425B004EA23A /* MovieQuotes */,
+				FEEBE9BF21FA425D004EA23A /* MovieQuotes MessagesExtension */,
+				FEEBE9BC21FA425D004EA23A /* Frameworks */,
+				FEEBE9AF21FA425B004EA23A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FEEBE9AF21FA425B004EA23A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEEBE9AE21FA425B004EA23A /* MovieQuotes.app */,
+				FEEBE9B821FA425D004EA23A /* MovieQuotes MessagesExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEEBE9B021FA425B004EA23A /* MovieQuotes */ = {
+			isa = PBXGroup;
+			children = (
+				FEEBE9B121FA425D004EA23A /* Assets.xcassets */,
+				FEEBE9B321FA425D004EA23A /* Info.plist */,
+			);
+			path = MovieQuotes;
+			sourceTree = "<group>";
+		};
+		FEEBE9BC21FA425D004EA23A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEEBE9BD21FA425D004EA23A /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEEBE9BF21FA425D004EA23A /* MovieQuotes MessagesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				FEEBE9C021FA425D004EA23A /* MessagesViewController.swift */,
+				FEEBE9C221FA425D004EA23A /* MainInterface.storyboard */,
+				FEEBE9C521FA425D004EA23A /* Assets.xcassets */,
+				FEEBE9C721FA425D004EA23A /* Info.plist */,
+			);
+			path = "MovieQuotes MessagesExtension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEEBE9AD21FA425B004EA23A /* MovieQuotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEEBE9CE21FA425D004EA23A /* Build configuration list for PBXNativeTarget "MovieQuotes" */;
+			buildPhases = (
+				FEEBE9AC21FA425B004EA23A /* Resources */,
+				FEEBE9CD21FA425D004EA23A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEEBE9BB21FA425D004EA23A /* PBXTargetDependency */,
+			);
+			name = MovieQuotes;
+			productName = MovieQuotes;
+			productReference = FEEBE9AE21FA425B004EA23A /* MovieQuotes.app */;
+			productType = "com.apple.product-type.application.messages";
+		};
+		FEEBE9B721FA425D004EA23A /* MovieQuotes MessagesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEEBE9CA21FA425D004EA23A /* Build configuration list for PBXNativeTarget "MovieQuotes MessagesExtension" */;
+			buildPhases = (
+				FEEBE9B421FA425D004EA23A /* Sources */,
+				FEEBE9B521FA425D004EA23A /* Frameworks */,
+				FEEBE9B621FA425D004EA23A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MovieQuotes MessagesExtension";
+			productName = "MovieQuotes MessagesExtension";
+			productReference = FEEBE9B821FA425D004EA23A /* MovieQuotes MessagesExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEEBE9A821FA425B004EA23A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Terry Dengis";
+				TargetAttributes = {
+					FEEBE9AD21FA425B004EA23A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					FEEBE9B721FA425D004EA23A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = FEEBE9AB21FA425B004EA23A /* Build configuration list for PBXProject "MovieQuotes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEEBE9A721FA425B004EA23A;
+			productRefGroup = FEEBE9AF21FA425B004EA23A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEEBE9AD21FA425B004EA23A /* MovieQuotes */,
+				FEEBE9B721FA425D004EA23A /* MovieQuotes MessagesExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEEBE9AC21FA425B004EA23A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEEBE9B221FA425D004EA23A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEEBE9B621FA425D004EA23A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEEBE9C621FA425D004EA23A /* Assets.xcassets in Resources */,
+				FEEBE9C421FA425D004EA23A /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEEBE9B421FA425D004EA23A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEEBE9C121FA425D004EA23A /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FEEBE9BB21FA425D004EA23A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEEBE9B721FA425D004EA23A /* MovieQuotes MessagesExtension */;
+			targetProxy = FEEBE9BA21FA425D004EA23A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FEEBE9C221FA425D004EA23A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEEBE9C321FA425D004EA23A /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEEBE9C821FA425D004EA23A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FEEBE9C921FA425D004EA23A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEEBE9CB21FA425D004EA23A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8WA3Q4R937;
+				INFOPLIST_FILE = "MovieQuotes MessagesExtension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Wavelength.MovieQuotes.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEEBE9CC21FA425D004EA23A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8WA3Q4R937;
+				INFOPLIST_FILE = "MovieQuotes MessagesExtension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Wavelength.MovieQuotes.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FEEBE9CF21FA425D004EA23A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8WA3Q4R937;
+				INFOPLIST_FILE = MovieQuotes/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Wavelength.MovieQuotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEEBE9D021FA425D004EA23A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8WA3Q4R937;
+				INFOPLIST_FILE = MovieQuotes/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Wavelength.MovieQuotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEEBE9AB21FA425B004EA23A /* Build configuration list for PBXProject "MovieQuotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEEBE9C821FA425D004EA23A /* Debug */,
+				FEEBE9C921FA425D004EA23A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEEBE9CA21FA425D004EA23A /* Build configuration list for PBXNativeTarget "MovieQuotes MessagesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEEBE9CB21FA425D004EA23A /* Debug */,
+				FEEBE9CC21FA425D004EA23A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEEBE9CE21FA425D004EA23A /* Build configuration list for PBXNativeTarget "MovieQuotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEEBE9CF21FA425D004EA23A /* Debug */,
+				FEEBE9D021FA425D004EA23A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEEBE9A821FA425B004EA23A /* Project object */;
+}

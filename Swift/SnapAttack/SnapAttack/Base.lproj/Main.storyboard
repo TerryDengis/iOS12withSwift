@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cheveuxdange.ttf">
+            <string>Cheveuxdange</string>
+        </array>
+        <array key="DK Cinnabar Brush.ttf">
+            <string>DKCinnabarBrush</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SnapAttack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Table" translatesAutoresizingMaskIntoConstraints="NO" id="wwl-dr-wtQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snap Attack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="iKw-Si-Ngi">
+                                <rect key="frame" x="16" y="44" width="343" height="154.66666666666666"/>
+                                <fontDescription key="fontDescription" name="DKCinnabarBrush" family="DK Cinnabar Brush" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue_cover" translatesAutoresizingMaskIntoConstraints="NO" id="dAb-KX-wdS">
+                                <rect key="frame" x="32" y="297.66666666666669" width="152.66666666666666" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="qYh-IN-d5m"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red_cover" translatesAutoresizingMaskIntoConstraints="NO" id="RQK-6d-LQv">
+                                <rect key="frame" x="202.66666666666663" y="297.66666666666669" width="152.33333333333337" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="nVf-PD-1Oo"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJm-e1-2sp">
+                                <rect key="frame" x="16" y="582.33333333333337" width="343" height="154.66666666666663"/>
+                                <fontDescription key="fontDescription" name="DKCinnabarBrush" family="DK Cinnabar Brush" pointSize="45"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DzO-BC-0Mr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grP-dC-O33">
+                                <rect key="frame" x="20" y="258.66666666666669" width="150.66666666666666" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2Do-iX-TdO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cheveuxdange" family="Cheveuxdange" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VY7-4v-FfA">
+                                <rect key="frame" x="208.66666666666663" y="258.66666666666669" width="150.33333333333337" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="JH0-0D-5HT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cheveuxdange" family="Cheveuxdange" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="grP-dC-O33" firstAttribute="top" secondItem="iKw-Si-Ngi" secondAttribute="bottom" constant="60" id="1Pc-sQ-oji"/>
+                            <constraint firstItem="iKw-Si-Ngi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4KX-yj-2eD"/>
+                            <constraint firstItem="VY7-4v-FfA" firstAttribute="width" secondItem="grP-dC-O33" secondAttribute="width" id="6Yy-ld-LWq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vJm-e1-2sp" secondAttribute="bottom" constant="41" id="6qw-fs-oHH"/>
+                            <constraint firstItem="vJm-e1-2sp" firstAttribute="height" secondItem="iKw-Si-Ngi" secondAttribute="height" id="8s3-Qk-sTG"/>
+                            <constraint firstItem="wwl-dr-wtQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9tx-yC-TGD"/>
+                            <constraint firstItem="wwl-dr-wtQ" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="HB0-Db-NaE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vJm-e1-2sp" secondAttribute="trailing" constant="16" id="JeI-96-cNe"/>
+                            <constraint firstItem="RQK-6d-LQv" firstAttribute="width" secondItem="grP-dC-O33" secondAttribute="width" constant="2" id="JgT-fa-cvo"/>
+                            <constraint firstItem="vJm-e1-2sp" firstAttribute="top" secondItem="RQK-6d-LQv" secondAttribute="bottom" constant="84.5" id="Kc0-l4-Ls6"/>
+                            <constraint firstItem="dAb-KX-wdS" firstAttribute="top" secondItem="grP-dC-O33" secondAttribute="bottom" constant="-1" id="MsD-Mq-tYt"/>
+                            <constraint firstItem="VY7-4v-FfA" firstAttribute="top" secondItem="iKw-Si-Ngi" secondAttribute="bottom" constant="60" id="NVR-3O-QQF"/>
+                            <constraint firstItem="wwl-dr-wtQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="R1C-0C-eFN"/>
+                            <constraint firstItem="VY7-4v-FfA" firstAttribute="leading" secondItem="grP-dC-O33" secondAttribute="trailing" constant="38" id="S0G-wq-Yc8"/>
+                            <constraint firstItem="iKw-Si-Ngi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SVH-If-YIb"/>
+                            <constraint firstItem="vJm-e1-2sp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SZ1-8N-wyd"/>
+                            <constraint firstItem="RQK-6d-LQv" firstAttribute="leading" secondItem="dAb-KX-wdS" secondAttribute="trailing" constant="18" id="Tqd-0p-acj"/>
+                            <constraint firstItem="RQK-6d-LQv" firstAttribute="top" secondItem="VY7-4v-FfA" secondAttribute="bottom" constant="-1" id="YaF-Ll-e0x"/>
+                            <constraint firstItem="wwl-dr-wtQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ewb-Pd-doC"/>
+                            <constraint firstItem="grP-dC-O33" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iwr-9t-iX7"/>
+                            <constraint firstItem="vJm-e1-2sp" firstAttribute="top" secondItem="dAb-KX-wdS" secondAttribute="bottom" constant="84.5" id="sr9-i8-q9m"/>
+                            <constraint firstItem="dAb-KX-wdS" firstAttribute="width" secondItem="grP-dC-O33" secondAttribute="width" constant="2" id="tNO-NN-70h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iKw-Si-Ngi" secondAttribute="trailing" constant="16" id="ueh-UQ-yzm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RQK-6d-LQv" secondAttribute="trailing" constant="20" id="wWy-kF-9P6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VY7-4v-FfA" secondAttribute="trailing" constant="16" id="z98-M6-gUp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstCard" destination="dAb-KX-wdS" id="874-uB-YnJ"/>
+                        <outlet property="scoreLabel" destination="VY7-4v-FfA" id="L6e-kG-kzZ"/>
+                        <outlet property="secondCard" destination="RQK-6d-LQv" id="BEr-9n-Sks"/>
+                        <outlet property="startButton" destination="vJm-e1-2sp" id="ou2-Me-Hoa"/>
+                        <outlet property="timeLabel" destination="grP-dC-O33" id="efK-9K-q6a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="133.25892857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Table" width="1980" height="1200"/>
+        <image name="blue_cover" width="167.44186401367188" height="243.12557983398438"/>
+        <image name="red_cover" width="167.44186401367188" height="243.12557983398438"/>
+    </resources>
+</document>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_First_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="L8i-Y9-5dt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Pr-fR-Hbg">
+                                <rect key="frame" x="16" y="337.5" width="343" height="309.5"/>
+                                <state key="normal" image="cat"/>
+                                <connections>
+                                    <action selector="meow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c4U-6N-rCC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meow!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RU5-yC-UZV">
+                                <rect key="frame" x="16" y="20" width="343" height="309.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="70"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RU5-yC-UZV" secondAttribute="trailing" constant="16" id="4di-rA-oKX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Pr-fR-Hbg" secondAttribute="bottom" constant="20" id="KG9-9U-M3d"/>
+                            <constraint firstItem="4Pr-fR-Hbg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Luy-zC-SZX"/>
+                            <constraint firstAttribute="bottom" secondItem="L8i-Y9-5dt" secondAttribute="bottom" id="Tze-pD-OQR"/>
+                            <constraint firstItem="L8i-Y9-5dt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="U6K-Yw-JyS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Pr-fR-Hbg" secondAttribute="trailing" constant="16" id="USO-tP-DP0"/>
+                            <constraint firstItem="4Pr-fR-Hbg" firstAttribute="height" secondItem="RU5-yC-UZV" secondAttribute="height" id="cI4-AZ-jnh"/>
+                            <constraint firstItem="L8i-Y9-5dt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eh2-Lm-war"/>
+                            <constraint firstItem="RU5-yC-UZV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fGl-Sr-VtK"/>
+                            <constraint firstItem="RU5-yC-UZV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qWS-Uh-8UB"/>
+                            <constraint firstItem="4Pr-fR-Hbg" firstAttribute="top" secondItem="RU5-yC-UZV" secondAttribute="bottom" constant="8" id="tU4-WD-0cV"/>
+                            <constraint firstItem="L8i-Y9-5dt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ypz-oo-yZb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="4Pr-fR-Hbg" id="aTb-XU-DN4"/>
+                        <outlet property="label" destination="RU5-yC-UZV" id="hiC-yc-kzb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="1200" height="1200"/>
+        <image name="cat" width="900" height="978"/>
+    </resources>
+</document>

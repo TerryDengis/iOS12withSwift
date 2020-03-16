@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Messages View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModule="MovieQuotes_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0Z6-wW-0nU">
+                                <rect key="frame" x="20" y="40" width="280" height="488"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yRM-JY-Lne">
+                                        <rect key="frame" x="0.0" y="0.0" width="135" height="488"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKO-Tp-Jbw">
+                                                <rect key="frame" x="0.0" y="0.0" width="135" height="156"/>
+                                                <state key="normal" image="Arnold">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="movie1:" destination="ObA-dk-sSI" eventType="touchUpInside" id="ggS-An-iK6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95f-0O-biy">
+                                                <rect key="frame" x="0.0" y="166" width="135" height="156"/>
+                                                <state key="normal" image="ET">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="movie3:" destination="ObA-dk-sSI" eventType="touchUpInside" id="SBP-lj-ZXO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfS-yW-l2B">
+                                                <rect key="frame" x="0.0" y="332" width="135" height="156"/>
+                                                <state key="normal" image="Rocky">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="movie5:" destination="ObA-dk-sSI" eventType="touchUpInside" id="OkE-U6-mFA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="J80-gw-ukM">
+                                        <rect key="frame" x="145" y="0.0" width="135" height="488"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIU-JP-uwP">
+                                                <rect key="frame" x="0.0" y="0.0" width="135" height="156"/>
+                                                <state key="normal" image="DarthVader">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="movie2:" destination="ObA-dk-sSI" eventType="touchUpInside" id="vJD-lf-oN9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibq-a8-jFn">
+                                                <rect key="frame" x="0.0" y="166" width="135" height="156"/>
+                                                <state key="normal" image="JamesBond">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="movie4:" destination="ObA-dk-sSI" eventType="touchUpInside" id="w7h-CB-bLk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvS-QQ-JUe">
+                                                <rect key="frame" x="0.0" y="332" width="135" height="156"/>
+                                                <state key="normal" image="Scarface">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="movie6:" destination="ObA-dk-sSI" eventType="touchUpInside" id="TKu-1z-aV7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LDy-ih-0nr" firstAttribute="trailing" secondItem="0Z6-wW-0nU" secondAttribute="trailing" constant="20" id="aNa-Sg-4eM"/>
+                            <constraint firstItem="0Z6-wW-0nU" firstAttribute="leading" secondItem="LDy-ih-0nr" secondAttribute="leading" constant="20" id="gXD-9G-5uT"/>
+                            <constraint firstItem="LDy-ih-0nr" firstAttribute="bottom" secondItem="0Z6-wW-0nU" secondAttribute="bottom" id="nLa-TB-zdm"/>
+                            <constraint firstItem="0Z6-wW-0nU" firstAttribute="top" secondItem="LDy-ih-0nr" secondAttribute="top" constant="20" id="tqv-YD-aa0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LDy-ih-0nr"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="528"/>
+                    <connections>
+                        <outlet property="button1" destination="cKO-Tp-Jbw" id="H0e-GY-GHQ"/>
+                        <outlet property="button2" destination="nIU-JP-uwP" id="GEg-9Z-MtZ"/>
+                        <outlet property="button3" destination="95f-0O-biy" id="kxV-67-lY7"/>
+                        <outlet property="button4" destination="Ibq-a8-jFn" id="NqQ-s4-V7Q"/>
+                        <outlet property="button5" destination="vfS-yW-l2B" id="Nff-Ox-tc3"/>
+                        <outlet property="button6" destination="hvS-QQ-JUe" id="mQ8-85-ihr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Arnold" width="720" height="480"/>
+        <image name="DarthVader" width="768" height="431"/>
+        <image name="ET" width="280" height="180"/>
+        <image name="JamesBond" width="1368" height="1025"/>
+        <image name="Rocky" width="620" height="412"/>
+        <image name="Scarface" width="1074.239990234375" height="718.79998779296875"/>
+    </resources>
+</document>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Name</key>
+		<string>Cheetah</string>
+		<key>Image</key>
+		<string>Cheetah</string>
+		<key>Life Span</key>
+		<string>10-12 years </string>
+		<key>Description</key>
+		<string>The cheetah is a large cat of the subfamily Felinae that occurs in Southern, North and East Africa, and a few localities in Iran.</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Jaguar</string>
+		<key>Image</key>
+		<string>Jaguar</string>
+		<key>Life Span</key>
+		<string>12 – 15 years</string>
+		<key>Description</key>
+		<string>The jaguar is a wild cat species and the only extant member of the genus Panthera native to the Americas.</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Leopard</string>
+		<key>Image</key>
+		<string>Leopard</string>
+		<key>Life Span</key>
+		<string>12 – 17 years</string>
+		<key>Description</key>
+		<string>The leopard is one of the five species in the genus Panthera, a member of the Felidae. </string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Lion</string>
+		<key>Image</key>
+		<string>Lion</string>
+		<key>Life Span</key>
+		<string>10 – 14 years</string>
+		<key>Description</key>
+		<string>The lion is a species in the cat family; it is a muscular, deep-chested cat with a short, rounded head, a reduced neck and round ears, and a hairy tuft at the end of its tail.</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Tiger</string>
+		<key>Image</key>
+		<string>Tiger</string>
+		<key>Life Span</key>
+		<string>20 – 26 years</string>
+		<key>Description</key>
+		<string>The tiger is the largest cat species, most recognizable for its pattern of dark vertical stripes on reddish-orange fur with a lighter underside.</string>
+	</dict>
+</array>
+</plist>

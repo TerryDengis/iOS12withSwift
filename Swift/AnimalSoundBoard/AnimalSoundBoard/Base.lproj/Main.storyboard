@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimalSoundBoard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Jsp-XJ-blj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="LOZ-kV-C2m">
+                                <rect key="frame" x="16" y="36" width="343" height="579"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="60L-R4-fyD">
+                                        <rect key="frame" x="0.0" y="0.0" width="163.5" height="579"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVX-6z-dIV">
+                                                <rect key="frame" x="0.0" y="0.0" width="163.5" height="182.5"/>
+                                                <state key="normal" title="Button" image="Cat">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kTc-ci-dXc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="miW-Qm-ndn">
+                                                <rect key="frame" x="0.0" y="198.5" width="163.5" height="182"/>
+                                                <state key="normal" title="Button" image="Frog">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="frog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PNv-ef-AM1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sau-m0-urU">
+                                                <rect key="frame" x="0.0" y="396.5" width="163.5" height="182.5"/>
+                                                <state key="normal" title="Button" image="Pig">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="pig:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CMg-px-XcN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="d0J-sO-508">
+                                        <rect key="frame" x="179.5" y="0.0" width="163.5" height="579"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcG-DR-bQJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="163.5" height="182.5"/>
+                                                <state key="normal" title="Button" image="Dog">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="dog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5eq-Zc-ioz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krR-bH-HqC">
+                                                <rect key="frame" x="0.0" y="198.5" width="163.5" height="182"/>
+                                                <state key="normal" title="Button" image="Horse">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="horse:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Bn-7Q-ROY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srs-9N-7Bk">
+                                                <rect key="frame" x="0.0" y="396.5" width="163.5" height="182.5"/>
+                                                <state key="normal" title="Button" image="Sheep">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sheep:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qnA-vD-Lo4"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="VC4-bs-gEY">
+                                <rect key="frame" x="14" y="631" width="347" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="V3G-xn-6mz"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="maximumTrackTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="volume:" destination="BYZ-38-t0r" eventType="valueChanged" id="AX4-Tb-jOK"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VC4-bs-gEY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="EB6-HY-YIE"/>
+                            <constraint firstItem="VC4-bs-gEY" firstAttribute="top" secondItem="LOZ-kV-C2m" secondAttribute="bottom" constant="16" id="FBc-B4-sNR"/>
+                            <constraint firstItem="LOZ-kV-C2m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="OEv-fX-E2X"/>
+                            <constraint firstItem="LOZ-kV-C2m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="WAv-w0-0zN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VC4-bs-gEY" secondAttribute="bottom" constant="16" id="XVm-C2-B7B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VC4-bs-gEY" secondAttribute="trailing" constant="16" id="XwI-Ky-E6Z"/>
+                            <constraint firstAttribute="bottom" secondItem="Jsp-XJ-blj" secondAttribute="bottom" id="ecg-Cu-8CL"/>
+                            <constraint firstItem="Jsp-XJ-blj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="huY-2f-azR"/>
+                            <constraint firstItem="Jsp-XJ-blj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="itz-uI-5TC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LOZ-kV-C2m" secondAttribute="trailing" constant="16" id="kzW-Qk-VDn"/>
+                            <constraint firstItem="Jsp-XJ-blj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yyz-47-8k8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="NVX-6z-dIV" id="QMm-Be-1DP"/>
+                        <outlet property="button2" destination="TcG-DR-bQJ" id="oGi-5e-4UR"/>
+                        <outlet property="button3" destination="miW-Qm-ndn" id="IJV-wh-6aj"/>
+                        <outlet property="button4" destination="krR-bH-HqC" id="z3a-O1-ZK3"/>
+                        <outlet property="button5" destination="sau-m0-urU" id="Cu5-3X-nd0"/>
+                        <outlet property="button6" destination="srs-9N-7Bk" id="Cno-mg-wdX"/>
+                        <outlet property="volumeSlider" destination="VC4-bs-gEY" id="mel-5E-D0Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="220" y="121.88905547226388"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="1920" height="1200"/>
+        <image name="Cat" width="507" height="800"/>
+        <image name="Dog" width="235.05882263183594" height="315.10589599609375"/>
+        <image name="Frog" width="794" height="900"/>
+        <image name="Horse" width="216" height="251.57647705078125"/>
+        <image name="Pig" width="667" height="745"/>
+        <image name="Sheep" width="195.62263488769531" height="203.77359008789062"/>
+    </resources>
+</document>
